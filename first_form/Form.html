@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter Username:</label>
+            <input type="text" placeholder="Username" id="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter Password:</label>
+            <input type="password" placeholder="Password" id="password" name="password">
+        </p>
+        <p>
+            <label for="colour">Favourite Colour:</label>
+            <input type="color" id=colour name="color">
+        </p>
+        <p>
+            <label for="email">Type your Email:</label>
+            <input type="email" placeholder="Email" id="email" name="email">
+        </p>
+        <p>
+            <label for="time">Enter the current time:</label>
+            <input type="time" id="time" name="time">
+
+        </p>
+        <p>
+            <label for="number">Pick a number from 1 - 1,000,000:</label>
+            <input type="number" placeholder="1 - 1,000,000" id="number" name="num">
+
+        </p>
+        <p>
+            <label for="date">Today's date:</label>
+            <input type="date" id="date" name="date">
+
+        </p>
+        <p>
+            <label for="tel">Enter your Phone Number:</label>
+            <input type="tel" placeholder="Phone Number" id="tel" name="tel">
+        </p>
+
+        <button>Submit</button>
+
+
+        <!-- 
+        <input type="range"> 
+        <input type="submit">
+        <input type="reset">
+        -->
+    </form>
+
+    <hr>
+
+    <form action="https://www.google.com/search?">
+        <input type="text" name="q">
+        <button>Look in Google</button>
+    </form>
+
+    <h2>more inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" id="agree" name="agree_tos" value="agree">
+        <label for="agree">Do you agree</label>
+        <button>submit</button>
+    </form>
+
+    <hr>
+    <!-- Radio inputs -->
+    <h2>radio buttons</h2>
+    <form action="/form">
+        <label for="xs">XS</label>
+        <input type="radio" id="xs" name="size" value="xs">
+        <label for="s">S</label>
+        <input type="radio" id="s" name="size" value="s">
+        <label for="m">M</label>
+        <input type="radio" id="m" name="size" value="m">
+        <button>Submit</button>
+    </form>
+
+    <hr>
+    <!-- Select & Option -->
+    <label for="meal">please select meal</label>
+    <select name="meal" id="meal">
+        <option value="Chicken">Chicken</option>
+        <option value="Steak">Steak</option>
+        <option value="Veg">Vegetarian</option>
+        <option value="Vegan">Vegan</option>
+    </select>
+
+    <hr>
+    <!-- checkbox inputs -->
+
+    <h2>Do you like coffee?</h2>
+    <form action="/coffee">
+        <label for="yes">Yes</label>
+        <input type="checkbox" name="cofee" id="yes" value="yes">
+        <br>
+        <label for="no">No</label>
+        <input type="checkbox" name="coffee" id="no" value="no">
+        <br>
+        <label for="N/A">Never tried it</label>
+        <input type="checkbox" name="coffee" id="N/A" value="Never tried it">
+        <br>
+        <button>Submit</button>
+    </form>
+
+    <hr>
+    <!-- Range Inputs -->
+    <div>
+        <form action="/volume">
+            <label for="volume">Volume</label>
+            <input type="range" name="volume" id="volume" min="0" max="10" value="7.5">
+            <button>submit</button>
+        </form>
+    </div>
+    <hr>
+
+    <div>
+        <form action="texetarea">
+            <label for="requests">Any special requests?</label>
+            <br>
+            <textarea name="requests" id="" cols="40" rows="10" placeholder="Type something here"></textarea>
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- form validations -->
+    <form action="/vaild">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">password</label>
+        <input type="text" id="password" name="password" minlength="5" maxlength="20" required>
+        <button>Required</button>
+    </form>
+
+</body>
+
+</html>
